@@ -1,0 +1,85 @@
+.newsletter {
+    margin-bottom: 140px;
+    &__inner {
+        background-color: var(--blue-color);
+        padding-top: 66px;
+        padding-bottom: 54px;
+        color: var(--white-color);
+        .newsletter__content {
+            max-width: 590px;
+            color: var(--white-color);
+            margin: 0 auto;
+            text-align: center;
+        }
+        .newsletter__title {   
+            color: var(--white-color);      
+            margin-bottom: 21px;
+        }
+        .newsletter__text {
+            line-height: 130%;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 50px;
+        }
+        .newsletter-form {
+            width: 471px;
+            margin: 0 auto;
+            position: relative;
+            background-color: var(--white-color);
+            padding: 23px 18px 23px 18px;
+            border-radius: 10px;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 16px;
+                height: 16px;
+                background-image: url('../../icons/mail.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 18px;
+
+            }
+            &__input {
+                background-color: transparent;
+                border: none;
+                width: 100%;
+                margin-left: 46px;
+                &::placeholder {
+                    font-size: 16px;
+                    line-height: 137%;
+                    color: rgba(127, 127, 127, 0.66);
+                }
+            }
+            &__btn {
+                position: absolute;
+                right: 18px;
+                top: 8px;
+                padding: 15px 30px;
+                background-color: var(--yellow-color);
+                border-radius: 10px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 137%;
+                color: var(--white-color);
+               
+            }
+        }
+        
+    }
+    
+}
+
+@media (max-width: 750px) {
+    .newsletter {
+        &__inner {
+            .newsletter__content {
+                max-width: 80%;
+            }
+            .newsletter-form {
+                width: 90%;
+            }
+        }
+    }
+}
