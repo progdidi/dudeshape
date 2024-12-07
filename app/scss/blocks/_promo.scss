@@ -66,6 +66,9 @@
                 top: 30%;
                 left: 50%;
                 transform: translateX(-50%);
+                &-title {
+                    font-size: 38px;
+                }
             }
         }
     }
