@@ -1,0 +1,101 @@
+.popular { 
+    padding: 70px 0;   
+    &__inner {
+        position: relative;
+        .popular__title {
+            margin-bottom: 20px;
+        }
+        .popular__text {
+            max-width: 70%;
+            margin-bottom: 40px;
+        }
+        .popular-slider {
+            overflow: hidden;
+        }
+        .furniture__items {
+            display: flex;
+            gap: 30px;                      
+            .furniture-item {
+                box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.07);
+                min-width: 380px; 
+                .furniture-item__about {
+                    padding: 30px 24px;
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                    .furniture-item__descr {
+                        .furniture-item__title {
+                            font-weight: 500;
+                            color: #244d4d;
+                            margin-bottom: 21px;
+                        }
+                        .furniture-item__price {
+                            font-weight: 500;
+                            font-size: 24px;
+                            line-height: 129%;
+                            color: #154444;
+                        }
+                    }
+                    
+                    .furniture-item__buttons {
+                        display: flex;
+                        gap: 8px;
+                        flex-wrap: wrap;
+                        margin-bottom: 21px;
+                        .furniture-item__btn {
+                            width: 26px;
+                            height: 26px;
+                            border-radius: 100%;
+                            background-color: #ecf4ff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all 0.3s;
+                            &:hover {
+                                background-color: #ef5423;
+                            }
+
+                        }
+                        .furniture-item__buy-btn {
+                            border-radius: 6px;
+                            width: 78px;
+                            background-color: var(--main-color);
+                            color: var(--white-color);
+                            padding: 5px 0;
+                            text-align: center;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 175%;
+                            position: absolute;
+                            bottom: 27px;
+                            right: 27px;
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
+        
+        
+        .popular-slider__buttons {
+            position: absolute;
+            top: 70px;
+            right: 0;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            .popular-slider__btn {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #ecf4ff;
+                border-radius: 50%;
+            }
+        }
+        
+    }
+    
+}
