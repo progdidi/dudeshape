@@ -1,0 +1,1 @@
+# Dude Shape - website for furniture shop
