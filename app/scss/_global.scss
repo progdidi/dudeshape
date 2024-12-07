@@ -9,10 +9,11 @@
 }
 
 body {
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--main-font);
     font-size: 20px;
     line-height: 135%;
     font-weight: 400;
+    color: var(--text-color);
 }
 
 a{
@@ -38,4 +39,7 @@ button{
     font-size: 32px;
     line-height: 125%;
     color: var(--title-color);
+    &.div {
+        font-family: var(--main-font);
+    }
 }

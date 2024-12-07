@@ -1,5 +1,7 @@
 .promo {
     position: relative;
+    margin-bottom: 70px;
+    min-height: calc(100vh - 102px);
     .promo__inner {
         display: flex;
         justify-content: flex-end;
@@ -61,6 +63,7 @@
     .promo {
         .promo__inner {
             .promo__info {
+                top: 30%;
                 left: 50%;
                 transform: translateX(-50%);
             }
