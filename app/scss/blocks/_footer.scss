@@ -1,0 +1,160 @@
+.footer {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding-top: 80px;
+    .footer-top {
+        padding-bottom: 60px;
+        border-bottom: 1px solid #506e71;;
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .footer__info {
+            max-width: 340px;
+            .footer__logo {
+                margin-bottom: 30px;
+            }
+            .footer__info-text {
+                font-size: 16px;
+                line-height: 150%;
+                color: #fff;
+                opacity: 0.9;
+                margin-bottom: 40px;
+            }
+            .footer__title {
+                margin-bottom: 20px;
+            }
+            .footer-social__list {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+            .footer-social__list-item {
+                width: 20px;
+                height: 20px;
+                background-color: var(--white-color);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+        .footer__title {
+            font-family: var(--second-family);
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 130%;
+            color: var(--white-color);
+            margin-bottom: 30px;
+        }
+        
+        .footer-list {
+            .footer-list__item {
+                font-size: 18px;
+                opacity: 0.9;
+                margin-bottom: 16px;
+            }
+        }
+        
+        .footer-subscribe {
+            max-width: 253px;
+            &__text {
+                max-width: 241px;
+                font-size: 18px;
+                line-height: 128%;
+                opacity: 0.9;
+                margin-bottom: 40px;
+            }
+            .footer-subscribe__form {
+                background-color: var(--white-color);
+                display: flex;
+                padding: 11px 9px 11px 22px;
+                border-radius: 8px;
+                &-input {
+                    background-color: transparent;
+                    border: none;
+                    &::placeholder {
+                        font-size: 16px;
+                        color: #859395;
+                    }
+                }
+                &-btn {
+                    background-color: var(--yellow-color);
+                    border-radius: 50%;
+                    width: 28px;
+                    height: 28px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        
+        
+    }
+    
+    .footer-bottom {
+        padding: 20px 0;
+        &__text {
+            text-align: center;
+            font-size: 18px;
+            color: var(--white-color);
+            opacity: 0.9;
+        }
+    }
+}
+
+@media(max-width: 1050px) {
+    .footer {
+        .footer-top {
+            &__inner {
+                flex-wrap: wrap;
+            }
+            .footer__info {
+                max-width: 100%;
+                margin-bottom: 60px;
+                .footer__info-text {
+                    max-width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .footer {
+        .footer-top {
+            &__inner {
+                text-align: center;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                .footer__info {
+                    max-width: 100%;
+                    .footer__logo {
+                        width: 147px;
+                        margin: 0 auto;
+                        margin-bottom: 40px;
+                    }
+                    .footer__info-text {
+                        max-width: 90%;
+                    }
+                    .footer-social__list {
+                        justify-content: center;
+                    }
+
+                }
+
+                .footer-subscribe {
+                    max-width: 100%;
+                    &__text {
+                        max-width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
